@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ApiREST_UTA.props" />
+</Project>

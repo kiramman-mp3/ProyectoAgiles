@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Agiles\\ApiREST_UTA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4349559C-7896-1F49-6A56-4DB8C9B7C861}|..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\UTA_DocentesPromociones.Client.csproj|c:\\agiles\\front\\uta_docentespromociones\\uta_docentespromociones.client\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0DF0A92-B60D-EBA4-983B-6CC659D586C6}|..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones\\UTA_DocentesPromociones.csproj|c:\\agiles\\front\\uta_docentespromociones\\uta_docentespromociones\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4349559C-7896-1F49-6A56-4DB8C9B7C861}|..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\UTA_DocentesPromociones.Client.csproj|c:\\agiles\\front\\uta_docentespromociones\\uta_docentespromociones.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4349559C-7896-1F49-6A56-4DB8C9B7C861}|..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\UTA_DocentesPromociones.Client.csproj|c:\\agiles\\front\\uta_docentespromociones\\uta_docentespromociones.client\\pages\\perfil.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Agiles\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Program.cs",
+              "ToolTip": "C:\\Agiles\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Program.cs",
+              "RelativeToolTip": "..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T16:11:43.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Perfil.razor",
+              "DocumentMoniker": "C:\\Agiles\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Pages\\Perfil.razor",
+              "RelativeDocumentMoniker": "..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Pages\\Perfil.razor",
+              "ToolTip": "C:\\Agiles\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Pages\\Perfil.razor",
+              "RelativeToolTip": "..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Pages\\Perfil.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-13T16:06:48.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Agiles\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones\\Program.cs",
+              "ToolTip": "C:\\Agiles\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones\\Program.cs",
+              "RelativeToolTip": "..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T16:00:56.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Agiles\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Pages\\Login.razor",
+              "ToolTip": "C:\\Agiles\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Pages\\Login.razor",
+              "RelativeToolTip": "..\\Front\\UTA_DocentesPromociones\\UTA_DocentesPromociones.Client\\Pages\\Login.razor",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAowHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-13T15:59:05.774Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

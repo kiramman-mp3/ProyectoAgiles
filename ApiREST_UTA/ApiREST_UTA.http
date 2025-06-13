@@ -1,0 +1,6 @@
+@ApiREST_UTA_HostAddress = http://localhost:5270
+
+GET {{ApiREST_UTA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

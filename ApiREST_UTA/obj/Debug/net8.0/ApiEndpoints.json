@@ -1,0 +1,114 @@
+[
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiREST_UTA.Application.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
+    "Method": "ImportarCursos",
+    "RelativePath": "api/importar/cursos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiREST_UTA.Application.DTOs.CursosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
+    "Method": "ImportarEvaluaciones",
+    "RelativePath": "api/importar/evaluaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiREST_UTA.Application.DTOs.EvaluacionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
+    "Method": "ImportarInvestigaciones",
+    "RelativePath": "api/importar/investigaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiREST_UTA.Application.DTOs.InvestigacionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
+    "Method": "ImportarObras",
+    "RelativePath": "api/importar/obras",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiREST_UTA.Application.DTOs.ObraRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
+    "Method": "ImportarTiempoRol",
+    "RelativePath": "api/importar/tiempo-rol",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiREST_UTA.Application.DTOs.TiempoRolRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.PromocionController",
+    "Method": "ObtenerRequisitos",
+    "RelativePath": "api/promocion/requisitos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiREST_UTA.Application.DTOs.RequisitoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
