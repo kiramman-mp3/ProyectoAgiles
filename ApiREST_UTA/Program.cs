@@ -30,12 +30,20 @@ namespace ApiREST_UTA
             builder.Services.AddScoped<IInvestigacionRepository, InvestigacionRepository>();
             builder.Services.AddScoped<IEvaluacionDocenteRepository, EvaluacionDocenteRepository>();
             builder.Services.AddScoped<IRolRepository, RolRepository>();
+            builder.Services.AddScoped<ITesisRepository, TesisRepository>();
+            builder.Services.AddScoped<IObraIdiomaRepository, ObraIdiomaRepository>();
+            builder.Services.AddScoped<IProyectoPonderadoRepository, ProyectoPonderadoRepository>();
+            builder.Services.AddScoped<ICapacitacionImpartidaRepository, CapacitacionImpartidaRepository>();
 
-            // Inyección de servicios (sin interfaces para servicios)
+            // Inyección de servicios
             builder.Services.AddScoped<ObraService>();
             builder.Services.AddScoped<CursoService>();
             builder.Services.AddScoped<InvestigacionService>();
             builder.Services.AddScoped<PromocionService>();
+            builder.Services.AddScoped<TesisService>();
+            builder.Services.AddScoped<ObraIdiomaService>();
+            builder.Services.AddScoped<ProyectoPonderadoService>();
+            builder.Services.AddScoped<CapacitacionImpartidaService>();
             builder.Services.AddScoped<AuthService>(sp =>
                 new AuthService(sp.GetRequiredService<IUsuarioRepository>(), jwtKey));
 

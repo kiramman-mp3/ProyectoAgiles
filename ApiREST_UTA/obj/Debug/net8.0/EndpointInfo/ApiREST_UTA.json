@@ -191,7 +191,131 @@
         }
       }
     },
-    "/api/promocion/requisitos": {
+    "/api/importar/tesis-doctorado": {
+      "post": {
+        "tags": [
+          "Importacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TesisDoctoradoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TesisDoctoradoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TesisDoctoradoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/importar/obras-idioma": {
+      "post": {
+        "tags": [
+          "Importacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObraIdiomaRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObraIdiomaRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObraIdiomaRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/importar/proyectos-ponderados": {
+      "post": {
+        "tags": [
+          "Importacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProyectoPonderadoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProyectoPonderadoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProyectoPonderadoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/importar/capacitacion-impartida": {
+      "post": {
+        "tags": [
+          "Importacion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapacitacionImpartidaRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapacitacionImpartidaRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapacitacionImpartidaRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/promocion/validar": {
       "post": {
         "tags": [
           "Promocion"
@@ -225,6 +349,16 @@
   },
   "components": {
     "schemas": {
+      "CapacitacionImpartidaRequest": {
+        "type": "object",
+        "properties": {
+          "cedula": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CursosRequest": {
         "type": "object",
         "properties": {
@@ -269,6 +403,16 @@
         },
         "additionalProperties": false
       },
+      "ObraIdiomaRequest": {
+        "type": "object",
+        "properties": {
+          "cedula": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ObraRequest": {
         "type": "object",
         "properties": {
@@ -283,6 +427,16 @@
         },
         "additionalProperties": false
       },
+      "ProyectoPonderadoRequest": {
+        "type": "object",
+        "properties": {
+          "cedula": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "RequisitoRequest": {
         "type": "object",
         "properties": {
@@ -293,6 +447,16 @@
           "rolActualId": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TesisDoctoradoRequest": {
+        "type": "object",
+        "properties": {
+          "cedula": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

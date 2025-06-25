@@ -3,11 +3,12 @@
     public class RequisitoResponse
     {
         public string RolObjetivo { get; set; } = null!;
-        public string Descripcion { get; set; } = null!;
-        public int RequiereTiempo { get; set; }
-        public int RequiereObras { get; set; }
-        public decimal RequiereEvaluacion { get; set; }
-        public int RequiereCapacitacionHoras { get; set; }
-        public int RequiereInvestigacionMeses { get; set; }
+        public bool CumpleExperiencia { get; set; }
+        public bool CumpleObras { get; set; }
+        public bool CumpleEvaluacion { get; set; }
+        public bool CumpleCapacitacion { get; set; }
+        public bool CumpleInvestigacion { get; set; }
+        public bool CumpleTesisDoctorado { get; set; }
+        public string Observaciones { get; set; } = "";
     }
 }

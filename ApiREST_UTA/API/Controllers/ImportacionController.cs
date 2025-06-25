@@ -16,22 +16,33 @@ namespace ApiREST_UTA.API.Controllers
         private readonly IObraRepository _obraRepo;
         private readonly ICursoRepository _cursoRepo;
         private readonly IInvestigacionRepository _investigacionRepo;
-        private readonly IEvaluacionDocenteRepository _evaluacionRepo;
+        private readonly IEvaluacionDocenteRepository _evaluacionRepo; 
+        private readonly ITesisRepository _tesisRepo;
+        private readonly IObraIdiomaRepository _obraIdiomaRepo;
+        private readonly IProyectoPonderadoRepository _proyectoRepo;
+        private readonly ICapacitacionImpartidaRepository _capacitacionRepo;
 
         public ImportacionController(
-            IRRHHRepository rrhhRepo,
-            IObraRepository obraRepo,
-            ICursoRepository cursoRepo,
-            IInvestigacionRepository investigacionRepo,
-            IEvaluacionDocenteRepository evaluacionRepo)
+                    IRRHHRepository rrhhRepo,
+                    IObraRepository obraRepo,
+                    ICursoRepository cursoRepo,
+                    IInvestigacionRepository investigacionRepo,
+                    IEvaluacionDocenteRepository evaluacionRepo,
+                    ITesisRepository tesisRepo,
+                    IObraIdiomaRepository obraIdiomaRepo,
+                    IProyectoPonderadoRepository proyectoRepo,
+                    ICapacitacionImpartidaRepository capacitacionRepo)
         {
             _rrhhRepo = rrhhRepo;
             _obraRepo = obraRepo;
             _cursoRepo = cursoRepo;
             _investigacionRepo = investigacionRepo;
             _evaluacionRepo = evaluacionRepo;
+            _tesisRepo = tesisRepo;
+            _obraIdiomaRepo = obraIdiomaRepo;
+            _proyectoRepo = proyectoRepo;
+            _capacitacionRepo = capacitacionRepo;
         }
-
         [Authorize]
         [HttpPost("tiempo-rol")]
         public async Task<IActionResult> ImportarTiempoRol([FromBody] TiempoRolRequest request)
@@ -109,6 +120,39 @@ namespace ApiREST_UTA.API.Controllers
 
             return Ok(evaluaciones);
         }
+
+        [Authorize]
+        [HttpPost("tesis-doctorado")]
+        public async Task<IActionResult> ObtenerTesis([FromBody] TesisDoctoradoRequest req)
+        {
+            var data = await _tesisRepo.ObtenerTesisPorCedulaAsync(req.Cedula);
+            return Ok(new TesisDoctoradoResponse { Cedula = req.Cedula, Cantidad = data });
+        }
+
+        [Authorize]
+        [HttpPost("obras-idioma")]
+        public async Task<IActionResult> VerificarObraIdioma([FromBody] ObraIdiomaRequest req)
+        {
+            var tiene = await _obraIdiomaRepo.TieneObraEnIdiomaExtranjero(req.Cedula);
+            return Ok(new ObraIdiomaResponse { Cedula = req.Cedula, TieneObraEnOtroIdioma = tiene });
+        }
+
+        [Authorize]
+        [HttpPost("proyectos-ponderados")]
+        public async Task<IActionResult> ObtenerMesesPonderados([FromBody] ProyectoPonderadoRequest req)
+        {
+            var meses = await _proyectoRepo.ObtenerMesesPonderadosAsync(req.Cedula);
+            return Ok(new ProyectoPonderadoResponse { Cedula = req.Cedula, MesesPonderados = meses });
+        }
+
+        [Authorize]
+        [HttpPost("capacitacion-impartida")]
+        public async Task<IActionResult> ObtenerHorasImpartidas([FromBody] CapacitacionImpartidaRequest req)
+        {
+            var horas = await _capacitacionRepo.ObtenerHorasImpartidasAsync(req.Cedula);
+            return Ok(new CapacitacionImpartidaResponse { Cedula = req.Cedula, HorasImpartidas = horas });
+        }
+
 
     }
 }

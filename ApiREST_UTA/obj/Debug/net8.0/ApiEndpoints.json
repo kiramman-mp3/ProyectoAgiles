@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
+    "Method": "ObtenerHorasImpartidas",
+    "RelativePath": "api/importar/capacitacion-impartida",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiREST_UTA.Application.DTOs.CapacitacionImpartidaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
     "Method": "ImportarCursos",
     "RelativePath": "api/importar/cursos",
     "HttpMethod": "POST",
@@ -81,6 +97,54 @@
   },
   {
     "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
+    "Method": "VerificarObraIdioma",
+    "RelativePath": "api/importar/obras-idioma",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiREST_UTA.Application.DTOs.ObraIdiomaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
+    "Method": "ObtenerMesesPonderados",
+    "RelativePath": "api/importar/proyectos-ponderados",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiREST_UTA.Application.DTOs.ProyectoPonderadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
+    "Method": "ObtenerTesis",
+    "RelativePath": "api/importar/tesis-doctorado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ApiREST_UTA.Application.DTOs.TesisDoctoradoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST_UTA.API.Controllers.ImportacionController",
     "Method": "ImportarTiempoRol",
     "RelativePath": "api/importar/tiempo-rol",
     "HttpMethod": "POST",
@@ -96,9 +160,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ApiREST_UTA.API.Controllers.PromocionController",
-    "Method": "ObtenerRequisitos",
-    "RelativePath": "api/promocion/requisitos",
+    "ContainingType": "PromocionController",
+    "Method": "ValidarPromocion",
+    "RelativePath": "api/promocion/validar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

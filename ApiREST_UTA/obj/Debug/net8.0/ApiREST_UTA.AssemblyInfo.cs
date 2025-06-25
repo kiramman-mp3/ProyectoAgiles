@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiREST_UTA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+701094068e0623b2e6e1c1a295e89e9dfa65f28e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiREST_UTA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiREST_UTA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

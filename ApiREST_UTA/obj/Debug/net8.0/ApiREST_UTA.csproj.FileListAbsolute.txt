@@ -181,3 +181,4 @@ C:\Agiles\ApiREST_UTA\obj\Debug\net8.0\refint\ApiREST_UTA.dll
 C:\Agiles\ApiREST_UTA\obj\Debug\net8.0\ApiREST_UTA.pdb
 C:\Agiles\ApiREST_UTA\obj\Debug\net8.0\ApiREST_UTA.genruntimeconfig.cache
 C:\Agiles\ApiREST_UTA\obj\Debug\net8.0\ref\ApiREST_UTA.dll
+C:\Agiles\ApiREST_UTA\obj\Debug\net8.0\ApiREST_UTA.sourcelink.json
